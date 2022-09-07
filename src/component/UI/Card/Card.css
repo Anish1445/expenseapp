@@ -1,0 +1,17 @@
+.card{
+    box-shadow:2px 4px 5px 2px #3e3a3a;
+    background-color: #eef4f4;
+    /* background-color:black; */
+   border-radius: 10px;
+    padding: 10px 30px;
+    /* opacity: 0.6; */
+    margin: 10px;
+    margin-top: 20px;
+    width: 50vw;
+}
+
+@media (max-width:700px){
+    .card{
+        width: auto;
+    }
+}

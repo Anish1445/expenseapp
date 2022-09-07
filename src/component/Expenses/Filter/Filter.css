@@ -1,0 +1,15 @@
+label{
+    font-size: 20px;
+    margin-bottom: 50px;
+
+}
+
+.expenses-filter__control{
+    margin-bottom: 20px;
+}
+
+.dropdown{
+    float: right;
+    font-size: large;
+
+}
