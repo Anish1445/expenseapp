@@ -23,11 +23,7 @@ const AddNewExpense = (props) => {
     const value = event.target.value;
     setInputs(values => ({...values, [name]: value}))
 
-    // setUserInput({
-    //   ...userInput,
-    //   enteredTitle: event.target.value,
-      
-    // });
+  
   }
 
   const submithandler = (event) => 
@@ -51,8 +47,15 @@ const AddNewExpense = (props) => {
     item_price: '',
     date: '',
    })
+
+ 
+   setIsOpen(!isOpen);
+   
     // console.log(inputs);
   }
+
+ 
+
 
   return (
     <div className='main-container'>
@@ -65,7 +68,7 @@ const AddNewExpense = (props) => {
           <div className="form">
            <div className="title">Welcome</div>
            <div className="subtitle">Let's Add your Expense Details!</div>
-             <form onSubmit={submithandler}>
+             <form onSubmit={submithandler} >
              <div className="input-container ic1">
               <input id="expense_date" className="input" type="date" name='date' placeholder="" value={inputs.date || ""}  onChange={handleChange} />
                <div className="cut"></div>

@@ -1,7 +1,7 @@
 import './App.css';
 import Expense from './component/Expenses/Expense/Expense';
 import NewExpense from './component/AddNewExpense/NewExpense';
-import { useState } from 'react';
+import { Profiler, useState } from 'react';
 
 function App() {
   
@@ -38,11 +38,20 @@ function App() {
 
     console.log(expenses);
 
+    const callbackfunction=(id,startTime,actualDuration,baseDuration,commitTime,phase,interactions)=>
+    {
+     console.log( "id =" + id + " startTime= " + startTime)
+      console.log( " actualDuration= " + actualDuration + " baseDuration= " + baseDuration + " commitTime= " + commitTime )
+      console.log( " phase= " + phase + " interactions= " + interactions)
+    }
+
  return (
       
       // part three
     <div className='Foot'>
+      <Profiler id='NewExpense' onRender={callbackfunction}>
        <NewExpense onAddExpense={addExpensehandler}/>
+       </Profiler>
        {/* <div className='main'> */}
         {/* <div className='section1'>
         <div className='Container' > */}

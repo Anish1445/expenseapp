@@ -13,13 +13,7 @@
     box-shadow:2px 4px 5px 2px #3e3a3a;
 
 }
-/* .container{
-    background-color: rgb(28, 27, 27);
-    opacity: 0.6;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 10px;
-} */
+
 h2{
     color: #dde6ec;
 }
@@ -226,7 +220,7 @@ body {
       height: 30px;
       margin-top: 28px;
       text-align: center;
-      width: 80%;
+      width: 100%;
       
     }
     .addbtn{
@@ -299,7 +293,7 @@ body {
       height: 30px;
       margin-top: 18px;
       text-align: center;
-      width: 70%;
+      width: 100%;
     }
     .addbtn{
       font-size: 15px;
@@ -358,7 +352,7 @@ body {
     .input-container {
       height: 30px;
       position: relative;
-      width: 80%;
+      width: 100%;
     }
 
     .submit {
@@ -373,8 +367,8 @@ body {
       margin-top: 18px;
        /* outline: 0; */
       text-align: center;
-      width: 60%;
-      margin-left: -45px;
+      width: 100%;
+      /* margin-left: -45px; */
     }
     .addbtn{
       font-size: 15px;
